@@ -27,3 +27,7 @@ En el caso de Java, lo usual es pasar los programas al bytecode y, al momento de
   4. Total <-- Amount * BTCprice
   5. PRINT Total
   9. END
+  
+  Your date of birth in the matrix?
+
+en decimales es 2000 y en binario es: 11111010000
