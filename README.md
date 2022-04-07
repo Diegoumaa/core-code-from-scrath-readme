@@ -31,3 +31,53 @@ En el caso de Java, lo usual es pasar los programas al bytecode y, al momento de
   Your date of birth in the matrix?
 
 en decimales es 2000 y en binario es: 11111010000
+  
+  
+  Create a program to add two numbers given by the user
+  
+  .data
+
+        result: .asciiz "\nEl resultado de la suma es: "
+        numero1: .asciiz "\n Escriba el primer numero: "
+        numero2: .asciiz "\n Escriba el segundo numero: "
+  .text
+        main:
+  
+              li $v0, 4
+              la $a0, numero1
+              syscall
+              li $v0, 5
+              syscall
+              move $t0, $v0
+              li $v0, 4
+              la $a0, numero2
+              syscall
+              li $v0, 5
+              syscall
+              move $t1, $v0
+              add $t2, $t0, $t1
+              li $v0, 4
+              la $a0, result
+              syscall
+              li $v0, 1
+              move $a0, $t2
+              syscall
+
+  Create a program that display your name
+  
+   .data
+	      NOMBRE: .asciiz "\DIEGO UMANA\n"
+  .text
+	      main:
+              li $v0, 4
+              la $a0, NOMBRE
+              syscall
+  
+  En este ejercicio debes usar un control de flujo iterativo para poder imprimir todos los números pares en el rango de números del 0 al 100. Recuerda que no debes imprimir cada número, debes usar una estructura de control de flujo para realizar el ejercicio
+  
+  for (var i = 0; i <= 100; i+=2) {
+  
+  console.log(i);
+}
+  
+  
