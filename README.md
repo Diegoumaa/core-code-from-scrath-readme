@@ -73,11 +73,30 @@ en decimales es 2000 y en binario es: 11111010000
               la $a0, NOMBRE
               syscall
   
-  En este ejercicio debes usar un control de flujo iterativo para poder imprimir todos los números pares en el rango de números del 0 al 100. Recuerda que no debes imprimir cada número, debes usar una estructura de control de flujo para realizar el ejercicio
+ En este ejercicio debes usar un control de flujo iterativo para poder imprimir todos los números pares en el rango de números del 0 al 100. Recuerda que no debes imprimir cada número, debes usar una estructura de control de flujo para realizar el ejercicio
   
   for (var i = 0; i <= 100; i+=2) {
   
   console.log(i);
 }
   
-  
+The code shown below is not working in the right way, as a task you must find the error made by the developer who programmed this code and correct it, for this exercise you must explain what the error is and place the correct code
+		FORMA INCORRECTA		  
+var cond = false;
+
+if ((cond = true)) {
+  console.log('The cond variable is true');
+} else {
+  console.log('The cond variable is false');
+}
+			  
+	FORMA CORRECTA		  
+var  cond  =  false ;
+
+if (cond) {
+  console.log('The cond variable is true');
+} else {
+  console.log('The cond variable is false');
+}
+			  
+EL ERROR CON EL PRIMER CODIGO ES QUE A LA VARIABLE "COND" TENIA EL VALOR DE FALSE ENTONCES CUANDO ENTRA AL IF TENIA QUE SER VALOR TRUE ENTONCES NO CONCUERDA CON LA SENTENCIA EN CAMBIO SI DEJAMOS QUE TODO FLUYA NORMALMENTE COMO EL CODIGO CORECTO TENEMOS LA RESPUESTA QUE DEBERIA SER.
