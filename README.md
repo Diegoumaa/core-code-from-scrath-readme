@@ -109,13 +109,26 @@ var  cond  =  false ;
 
 if (cond) {
 			  
-  console.log('The cond variable is true');
+  console.log('es verdadero');
 			  
 } 
 			  else {
 			  
-  console.log('The cond variable is false');
+  console.log('es falso');
 			  
 }
 			  
 EL ERROR CON EL PRIMER CODIGO ES QUE A LA VARIABLE "COND" TENIA EL VALOR DE FALSE ENTONCES CUANDO ENTRA AL IF TENIA QUE SER VALOR TRUE ENTONCES NO CONCUERDA CON LA SENTENCIA EN CAMBIO SI DEJAMOS QUE TODO FLUYA NORMALMENTE COMO EL CODIGO CORECTO TENEMOS LA RESPUESTA QUE DEBERIA SER.
+			  
+ Debes crear el código que sigue la siguiente lógica, si el número dado es 100, toma este número como especial y muestra el siguiente mensaje: "¡Este es un número especial!", pero si el número es menor que 1000, múltiplo de 10 y diferente de 100, debe mostrar el siguiente mensaje: "Este número es casi especial". si no se cumple ninguna de las condiciones dadas mostrar el siguiente mensaje: "Sólo un número regular". Otro desarrollador estaba tratando de programar la lógica, pero aparentemente no pudo, necesita corregir el código para que funcione correctamente.
+			  
+			  
+ var  valor  =  100 ;
+
+if (valor == 100) {
+  console.log('este numero es especial!');
+} else if (valor < 1000 && valor % 10 == 0) {
+  console.log('este numero es casi especial');
+} else {
+  console.log('numero regular');
+}
