@@ -132,3 +132,30 @@ if (valor == 100) {
 } else {
   console.log('numero regular');
 }
+	
+	
+	MULTIPLICAR
+	function multiply(a, b){
+ return a * b;
+}
+	ASCII Total
+function uniTotal(string) {
+  return Array.from(string).reduce(
+    (result, char) => result + char.charCodeAt(0),0);
+}
+	Binary Addition
+function addBinary(a, b) {
+  return (a + b).toString(2);
+}
+	Student's Final Grade
+function finalGrade(exam, projects) {
+  let resultado = 0;
+  if (exam > 90 || projects > 10) {
+    resultado = 100;
+  } else if (exam > 75 && projects >= 5) {
+    resultado = 90;
+  } else if (exam > 50 && projects >= 2) {
+    resultado = 75;
+  }
+  return resultado;
+}
