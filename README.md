@@ -143,6 +143,10 @@ function uniTotal(string) {
   return Array.from(string).reduce(
     (result, char) => result + char.charCodeAt(0),0);
 }
+	Char From ASCII Value
+function  getChar(c) {
+  return String.fromCharCode(c);
+}
 	Binary Addition
 function addBinary(a, b) {
   return (a + b).toString(2);
@@ -159,3 +163,98 @@ function finalGrade(exam, projects) {
   }
   return resultado;
 }
+	Holiday VIII - Duty Free
+function dutyFree(normPrice, discount, hol) {
+
+  let dicountPrice = (normPrice * discount) / 100;
+  /* How many bottles at the discount price will cover the hol cost? */
+  let bottlesWithDicountPriceToCoverHoliday = hol / dicountPrice;
+  /* Please return an integer. Round down. */
+  let roundedResult = Math.floor(bottlesWithDicountPriceToCoverHoliday);
+  return roundedResult;
+}
+	Twice As Old
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}
+	Valid Spacing 
+	function validSpacing(s) {
+  if (s.length === 0) return true;
+  if (s[0] === ' ' || s[s.length - 1] === ' ') return false;
+  let aSpaces0 = s.split(' ');
+  for (let i = 0, length = aSpaces0.length; i < length; i++) {
+    if (aSpaces0[i] === '') return false;
+  }
+  return true;
+}
+						       Fake Binary
+function fakeBin(x) {
+  return Array.from(x)
+    .map((digit) => (+digit < 5 ? 0 : 1))
+    .join('');
+}
+			       Remove All Exclamation Marks From The End Of Sentence
+function remove(string) {
+  return string.replace(/!+$/, '');
+}
+			       Vowel Remover
+
+			       function shortcut(string) {
+  return string.replace(/[aeiou]/g, '');
+}
+			       Rock Paper Scissors!
+const rps = (p1, p2) => {
+  let rules = { rock: 'scissors', paper: 'rock', scissors: 'paper' };
+  if (p1 === p2) return 'Draw!';
+  if (p2 === rules[p1]) {
+    return 'Player 1 won!';
+  }
+  return 'Player 2 won!';
+};
+	Persistent Bugger
+
+	
+function persistence(num) {
+  let times = 0;
+  num = num.toString();
+  while (num.length > 1) {
+    times++;
+    num = num
+      .split('')
+      .map((a) => Number(a))
+      .reduce((a, b) => a * b)
+      .toString();
+  }
+  return times;
+}
+	week 3
+	
+	Who Likes It?
+	
+	function likes(names) {
+  if (names.length == 0) return 'no one likes this';
+  if (names.length == 1) return `${names[0]} likes this`;
+  if (names.length == 2) return `${names[0]} and ${names[1]} like this`;
+  if (names.length == 3)
+    return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+  return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
+}
+	Bit Counting
+var countBits = function (n) {
+  return n
+    .toString(2)
+    .split('')
+    .reduce((total, val) => total + Number(val), 0);
+};
+	Your order, please
+function order(words) {
+  let wordsArray = words.split(' ');
+  wordsArray = wordsArray.sort(
+    (w1, w2) => Number(w1.replace(/\D/g, '')) - Number(w2.replace(/\D/g, ''))
+  );
+  return wordsArray.join(' ');
+}
+
+	
+	
+	
