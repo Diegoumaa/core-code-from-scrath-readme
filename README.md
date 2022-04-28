@@ -174,10 +174,13 @@ function dutyFree(normPrice, discount, hol) {
   return roundedResult;
 }
 	Twice As Old
+	
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs(dadYearsOld - 2 * sonYearsOld);
 }
-	Valid Spacing 
+	
+	Valid Spacing
+	
 	function validSpacing(s) {
   if (s.length === 0) return true;
   if (s[0] === ' ' || s[s.length - 1] === ' ') return false;
@@ -187,8 +190,10 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
   }
   return true;
 }
+	
 						       Fake Binary
-function fakeBin(x) {
+
+						       function fakeBin(x) {
   return Array.from(x)
     .map((digit) => (+digit < 5 ? 0 : 1))
     .join('');
@@ -239,14 +244,18 @@ function persistence(num) {
     return `${names[0]}, ${names[1]} and ${names[2]} like this`;
   return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
 }
+	
 	Bit Counting
+	
 var countBits = function (n) {
   return n
     .toString(2)
     .split('')
     .reduce((total, val) => total + Number(val), 0);
 };
+	
 	Your order, please
+	
 function order(words) {
   let wordsArray = words.split(' ');
   wordsArray = wordsArray.sort(
@@ -255,6 +264,56 @@ function order(words) {
   return wordsArray.join(' ');
 }
 
+	Simple Pig Latin
+
+	function pigIt(str) {
+  return str.replace(/(\w)(\w*)(\s|$)/g, '$2$1ay$3');
+}
 	
+Counting Duplicates
+
+	function duplicateCount(text) {
+  return text
+    .toLowerCase()
+    .split('')
+    .filter((char, i, arr) => {
+      return arr.indexOf(char) !== i && arr.lastIndexOf(char) === i;
+    }).length;
+}
+	
+	Decode The Morse Code
+
+	decodeMorse = function (morseCode) {
+  return morseCode
+    .split(' ')
+    .map((word) => MORSE_CODE[word] || ' ')
+    .join('')
+    .replace(/  /g, ' ')
+    .trim();
+};
+	
+	Valid Parentheses
+
+	
+	function validParentheses(parens) {
+  return [...parens].reduce((a, c) => (a + c).replace('()', ''), '') === '';
+}
+	
+Convert String To Camel Case
+
+	function toCamelCase(str) {
+  return str
+    .replace(/-/g, '_')
+    .split('_')
+    .map((word, i) => (i > 0 ? word.toUpperCase()[0] + word.substr(1) : word))
+    .join('');
+};
+	
+	
+	Unique In Order
+	
+var uniqueInOrder = function (iterable) {
+  return [...iterable].filter((chr, i) => chr != iterable[i + 1]);
+};
 	
 	
