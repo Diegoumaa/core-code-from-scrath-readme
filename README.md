@@ -135,20 +135,27 @@ if (valor == 100) {
 	
 	
 	MULTIPLICAR
+	
 	function multiply(a, b){
  return a * b;
 }
+	
 	ASCII Total
+	
 function uniTotal(string) {
   return Array.from(string).reduce(
     (result, char) => result + char.charCodeAt(0),0);
 }
+	
 	Char From ASCII Value
-function  getChar(c) {
+
+	function  getChar(c) {
   return String.fromCharCode(c);
 }
+	
 	Binary Addition
-function addBinary(a, b) {
+
+	function addBinary(a, b) {
   return (a + b).toString(2);
 }
 	Student's Final Grade
@@ -163,8 +170,10 @@ function finalGrade(exam, projects) {
   }
   return resultado;
 }
+	
 	Holiday VIII - Duty Free
-function dutyFree(normPrice, discount, hol) {
+
+	function dutyFree(normPrice, discount, hol) {
 
   let dicountPrice = (normPrice * discount) / 100;
   /* How many bottles at the discount price will cover the hol cost? */
