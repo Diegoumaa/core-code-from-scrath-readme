@@ -136,36 +136,23 @@ if (valor == 100) {
 	
 	MULTIPLICAR
 	
-	function multiply(a, b){
- return a * b;
-}
+	function multiply(a, b){ return a * b;}
 	
 	ASCII Total
 	
-function uniTotal(string) {
-  return Array.from(string).reduce(
-    (result, char) => result + char.charCodeAt(0),0);
-}
+function uniTotal(string) {return Array.from(string).reduce( (result, char) => result + char.charCodeAt(0),0);}
 	
 	Char From ASCII Value
 
-	function  getChar(c) {
-  return String.fromCharCode(c);
-}
+	function  getChar(c) {return String.fromCharCode(c);}
 	
 	Binary Addition
 
-	function addBinary(a, b) {
-  return (a + b).toString(2);
-}
+	function addBinary(a, b) {return (a + b).toString(2);}
+	
 	Student's Final Grade
-function finalGrade(exam, projects) {
-  let resultado = 0;
-  if (exam > 90 || projects > 10) {
-    resultado = 100;
-  } else if (exam > 75 && projects >= 5) {
-    resultado = 90;
-  } else if (exam > 50 && projects >= 2) {
+	
+function finalGrade(exam, projects) {let resultado = 0; if (exam > 90 || projects > 10) resultado = 100;} else if (exam > 75 && projects >= 5) {resultado = 90;} else if (exam > 50 && projects >= 2) {
     resultado = 75;
   }
   return resultado;
@@ -173,20 +160,14 @@ function finalGrade(exam, projects) {
 	
 	Holiday VIII - Duty Free
 
-	function dutyFree(normPrice, discount, hol) {
-
-  let dicountPrice = (normPrice * discount) / 100;
-  /* How many bottles at the discount price will cover the hol cost? */
-  let bottlesWithDicountPriceToCoverHoliday = hol / dicountPrice;
-  /* Please return an integer. Round down. */
+	function dutyFree(normPrice, discount, hol) {let dicountPrice = (normPrice * discount) / 100;
+   let bottlesWithDicountPriceToCoverHoliday = hol / dicountPrice;
   let roundedResult = Math.floor(bottlesWithDicountPriceToCoverHoliday);
-  return roundedResult;
-}
+  return roundedResult;}
+	
 	Twice As Old
 	
-function twiceAsOld(dadYearsOld, sonYearsOld) {
-  return Math.abs(dadYearsOld - 2 * sonYearsOld);
-}
+function twiceAsOld(dadYearsOld, sonYearsOld) { return Math.abs(dadYearsOld - 2 * sonYearsOld);}
 	
 	Valid Spacing
 	
