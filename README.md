@@ -274,17 +274,11 @@ Counting Duplicates
 Convert String To Camel Case
 
 	function toCamelCase(str) {
-  return str
-    .replace(/-/g, '_')
-    .split('_')
-    .map((word, i) => (i > 0 ? word.toUpperCase()[0] + word.substr(1) : word))
-    .join('');};
+  return str.replace(/-/g, '_') .split('_').map((word, i) => (i > 0 ? word.toUpperCase()[0] + word.substr(1) : word)).join('');};
 	
 	
 	Unique In Order
-	
-var uniqueInOrder = function (iterable) {
-  return [...iterable].filter((chr, i) => chr != iterable[i + 1]);};
+var uniqueInOrder = function (iterable) { return [...iterable].filter((chr, i) => chr != iterable[i + 1]);};
 	
 	Fold An Array
 	
