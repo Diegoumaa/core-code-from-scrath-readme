@@ -124,7 +124,6 @@ EL ERROR CON EL PRIMER CODIGO ES QUE A LA VARIABLE "COND" TENIA EL VALOR DE FALS
 			  
 			  
  var  valor  =  100 ;
-
 if (valor == 100) {
   console.log('este numero es especial!');
 } else if (valor < 1000 && valor % 10 == 0) {
@@ -132,8 +131,7 @@ if (valor == 100) {
 } else { console.log('numero regular');}
 	
 	
-	
-	MULTIPLICAR
+	   MULTIPLICAR
 	
 	function multiply(a, b){ return a * b;}
 	
