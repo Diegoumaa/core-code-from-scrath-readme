@@ -88,7 +88,7 @@ en decimales es 2000 y en binario es: 11111010000
   
 # The code shown below is not working in the right way, as a task you must find the error made by the developer who programmed this code and correct it, for this exercise you must explain what the error is and place the correct code
 			  
-	# FORMA INCORRECTA
+	 FORMA INCORRECTA
 			  
 var cond = false;
 
@@ -103,7 +103,7 @@ if ((cond = true)) {
 			  
 }
 			  
-	# FORMA CORRECTA	
+	 FORMA CORRECTA	
 			  
 var  cond  =  false ;
 
@@ -129,9 +129,7 @@ if (valor == 100) {
   console.log('este numero es especial!');
 } else if (valor < 1000 && valor % 10 == 0) {
   console.log('este numero es casi especial');
-} else {
-  console.log('numero regular');
-}
+} else { console.log('numero regular');}
 	
 	MULTIPLICAR
 	
