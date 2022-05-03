@@ -1,9 +1,9 @@
 # core-code-from-scrath-readmes
-LENGUAJE COMPILADO 
+# LENGUAJE COMPILADO 
 
 Es un lenguaje de programación de computadora cuyo código fuente generalmente se compila o traduce al código de máquina para producir un programa ejecutable.
 
-Lenguaje interpretado
+# Lenguaje interpretado
 
 Es aquel que el código fuente se ejecuta directamente, instrucción a instrucción. Es decir, el código no pasa por un proceso de compilación, sino que tenemos un programa llamado intérprete que lee la instrucción en tiempo real, y la ejecuta
 
@@ -133,7 +133,7 @@ if (valor == 100) {
   console.log('numero regular');
 }
 	
-	#MULTIPLICAR
+	MULTIPLICAR
 	
 	function multiply(a, b){ return a * b;}
 	
