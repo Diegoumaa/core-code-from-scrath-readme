@@ -133,7 +133,7 @@ if (valor == 100) {
   console.log('numero regular');
 }
 	
-	# MULTIPLICAR
+	MULTIPLICAR
 	
 	function multiply(a, b){ return a * b;}
 	
