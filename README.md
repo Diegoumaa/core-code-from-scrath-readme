@@ -130,8 +130,9 @@ if (valor == 100) {
   console.log('este numero es casi especial');
 } else { console.log('numero regular');}
 	
+	#EJERCICIO 1
 	
-	   MULTIPLICAR
+         MULTIPLICAR
 	
 	function multiply(a, b){ return a * b;}
 	
