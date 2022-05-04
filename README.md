@@ -177,122 +177,125 @@ function twiceAsOld(dadYearsOld, sonYearsOld) { return Math.abs(dadYearsOld - 2 
 
 # Fake Binary
 
-						       function fakeBin(x) {
-  return Array.from(x)
-    .map((digit) => (+digit < 5 ? 0 : 1))
-    .join('');}
-			       Remove All Exclamation Marks From The End Of Sentence
+function fakeBin(x) {
+return Array.from(x)
+.map((digit) => (+digit < 5 ? 0 : 1))
+.join('');}
+
+			   #Remove All Exclamation Marks From The End Of Sentence
+
 function remove(string) {
-  return string.replace(/!+$/, '');}
+return string.replace(/!+$/, '');}
 
 			       # Vowel Remover
 
-			       function shortcut(string) {
-  return string.replace(/[aeiou]/g, '')}
+function shortcut(string) {
+return string.replace(/[aeiou]/g, '')}
 	
 # Rock Paper Scissors!
 			       
 const rps = (p1, p2) => {
-  let rules = { rock: 'scissors', paper: 'rock', scissors: 'paper' };
-  if (p1 === p2) return 'Draw!';
-  if (p2 === rules[p1]) {
-    return 'Player 1 won!'; }
-  return 'Player 2 won!';};
+let rules = { rock: 'scissors', paper: 'rock', scissors: 'paper' };
+if (p1 === p2) return 'Draw!';
+if (p2 === rules[p1]) {
+return 'Player 1 won!'; }
+return 'Player 2 won!';};
 
 # Persistent Bugger
 
 	
 function persistence(num) {
-  let times = 0;
-  num = num.toString();
-  while (num.length > 1) {
-    times++;
-    num = num
-      .split('')
-      .map((a) => Number(a))
-      .reduce((a, b) => a * b)
-      .toString(); }
-  return times;}
+let times = 0;
+num = num.toString();
+while (num.length > 1) {
+times++;
+num = num
+.split('')
+.map((a) => Number(a))
+.reduce((a, b) => a * b)
+.toString(); }
+ return times;}
 
 	
 # Who Likes It?
 	
-	function likes(names) {
-  if (names.length == 0) return 'no one likes this';
-  if (names.length == 1) return `${names[0]} likes this`;
-  if (names.length == 2) return `${names[0]} and ${names[1]} like this`;
-  if (names.length == 3)
-    return `${names[0]}, ${names[1]} and ${names[2]} like this`;
-  return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;}
+function likes(names) {
+if (names.length == 0) return 'no one likes this'; 
+if (names.length == 1) return `${names[0]} likes this`;
+if (names.length == 2) return `${names[0]} and ${names[1]} like this`;
+if (names.length == 3)
+return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;}
 	
 # Bit Counting
 	
 var countBits = function (n) {
-  return n
-    .toString(2)
-    .split('')
-    .reduce((total, val) => total + Number(val), 0);};
+return n 
+.toString(2)
+.split('')
+.reduce((total, val) => total + Number(val), 0);};
 	
 # Your order, please
 	
 function order(words) {
-  let wordsArray = words.split(' ');
-  wordsArray = wordsArray.sort(
-    (w1, w2) => Number(w1.replace(/\D/g, '')) - Number(w2.replace(/\D/g, ''))
-  );
-  return wordsArray.join(' ');}
+let wordsArray = words.split(' ');
+wordsArray = wordsArray.sort(
+ (w1, w2) => Number(w1.replace(/\D/g, '')) - Number(w2.replace(/\D/g, ''))
+ );
+return wordsArray.join(' ');}
 
 # Simple Pig Latin
 
-	function pigIt(str) {
-  return str.replace(/(\w)(\w*)(\s|$)/g, '$2$1ay$3');}
+Function pigIt(str) {
+return str.replace(/(\w)(\w*)(\s|$)/g, '$2$1ay$3');}
 	
 # Counting Duplicates
 
-	function duplicateCount(text) {
-  return text
-    .toLowerCase()
-    .split('')
-    .filter((char, i, arr) => {
-      return arr.indexOf(char) !== i && arr.lastIndexOf(char) === i;
-    }).length;}
+function duplicateCount(text) {
+return text
+.toLowerCase()
+.split('')
+.filter((char, i, arr) => {
+return arr.indexOf(char) !== i && arr.lastIndexOf(char) === i;
+}).length;}
 	
 # Decode The Morse Code
 
-	decodeMorse = function (morseCode) {
-  return morseCode
-    .split(' ')
-    .map((word) => MORSE_CODE[word] || ' ')
-    .join('')
-    .replace(/  /g, ' ')
-    .trim();};
+decodeMorse = function (morseCode) {
+return morseCode
+.split(' ')
+.map((word) => MORSE_CODE[word] || ' ')
+.join('')
+.replace(/  /g, ' ')
+.trim();};
 	
 # Valid Parentheses
 
 	
-	function validParentheses(parens) {
-  return [...parens].reduce((a, c) => (a + c).replace('()', ''), '') === '';}
+function validParentheses(parens) {
+return [...parens].reduce((a, c) => (a + c).replace('()', ''), '') === '';}
 	
 Convert String To Camel Case
 
-	function toCamelCase(str) {
-  return str.replace(/-/g, '_') .split('_').map((word, i) => (i > 0 ? word.toUpperCase()[0] + word.substr(1) : word)).join('');};
+function toCamelCase(str) {
+return str.replace(/-/g, '_') .split('_').map((word, i) => (i > 0 ? word.toUpperCase()[0] + word.substr(1) : word)).join('');};
 	
 	
-	Unique In Order
+# Unique In Order
+	
 var uniqueInOrder = function (iterable) { return [...iterable].filter((chr, i) => chr != iterable[i + 1]);};
 	
 # Fold An Array
 	
 function foldArray(a, n) {
-  const r = [],
-    c = a.slice();
-  while (c.length) r.push(c.pop() + (c.shift() || 0)); return n - 1 ? foldArray(r, n - 1) : r;}
+const r = [],
+c = a.slice();
+while (c.length) r.push(c.pop() + (c.shift() || 0)); return n - 1 ? foldArray(r, n - 1) : r;}
 	
 # Encrypt This!
 
-	const encryptThis = (text) => text
-    .split(' ').map((word) =>  word.replace(/(^\w)(\w)(\w*)(\w$)/, `$1$4$3$2`.replace(/^\w/, word.charCodeAt(0)) ).join(' ');
+const encryptThis = (text) => text
+.split(' ').map((word) =>  word.replace(/(^\w)(\w)(\w*)(\w$)/, `$1$4$3$2`.replace(/^\w/, word.charCodeAt(0)) ).join(' ');
 	
 	
 	
