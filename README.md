@@ -132,11 +132,11 @@ if (valor == 100) {
 }
 	
 	
-         MULTIPLICAR
+# MULTIPLICAR
 	
 	function multiply(a, b){ return a * b;}
 	
-ASCII Total
+# ASCII Total
 	
 function uniTotal(string) {return Array.from(string).reduce( (result, char) => result + char.charCodeAt(0),0);}
 	
