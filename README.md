@@ -128,16 +128,15 @@ if (valor == 100) {
   console.log('este numero es especial!');
 } else if (valor < 1000 && valor % 10 == 0) {
   console.log('este numero es casi especial');
-} else { console.log('numero regular');}
+} else { console.log('numero regular');
+}
 	
-	#EJERCICIO 1
 	
          MULTIPLICAR
 	
 	function multiply(a, b){ return a * b;}
 	
-	
-	ASCII Total
+ASCII Total
 	
 function uniTotal(string) {return Array.from(string).reduce( (result, char) => result + char.charCodeAt(0),0);}
 	
