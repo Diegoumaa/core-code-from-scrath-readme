@@ -140,32 +140,32 @@ if (valor == 100) {
 	
 function uniTotal(string) {return Array.from(string).reduce( (result, char) => result + char.charCodeAt(0),0);}
 	
-	Char From ASCII Value
+# Char From ASCII Value
 
 	function  getChar(c) {return String.fromCharCode(c);}
 	
-	Binary Addition
+# Binary Addition
 
 	function addBinary(a, b) {return (a + b).toString(2);}
 	
-	Student's Final Grade
+# Student's Final Grade
 	
 function finalGrade(exam, projects) {let resultado = 0; if (exam > 90 || projects > 10) resultado = 100;} else if (exam > 75 && projects >= 5) {resultado = 90;} else if (exam > 50 && projects >= 2) {
     resultado = 75;}
   return resultado;}
 	
-	Holiday VIII - Duty Free
+# Holiday VIII - Duty Free
 
 	function dutyFree(normPrice, discount, hol) {let dicountPrice = (normPrice * discount) / 100;
    let bottlesWithDicountPriceToCoverHoliday = hol / dicountPrice;
   let roundedResult = Math.floor(bottlesWithDicountPriceToCoverHoliday);
   return roundedResult;}
 	
-	Twice As Old
+# Twice As Old
 	
 function twiceAsOld(dadYearsOld, sonYearsOld) { return Math.abs(dadYearsOld - 2 * sonYearsOld);}
 	
-	Valid Spacing
+# Valid Spacing
 	
 	function validSpacing(s) {
   if (s.length === 0) return true;
@@ -173,9 +173,9 @@ function twiceAsOld(dadYearsOld, sonYearsOld) { return Math.abs(dadYearsOld - 2 
   let aSpaces0 = s.split(' ');
   for (let i = 0, length = aSpaces0.length; i < length; i++) {
     if (aSpaces0[i] === '') return false; }
-  return true;}
-	
-						       Fake Binary
+  return true;
+
+# Fake Binary
 
 						       function fakeBin(x) {
   return Array.from(x)
@@ -184,18 +184,22 @@ function twiceAsOld(dadYearsOld, sonYearsOld) { return Math.abs(dadYearsOld - 2 
 			       Remove All Exclamation Marks From The End Of Sentence
 function remove(string) {
   return string.replace(/!+$/, '');}
-			       Vowel Remover
+
+			       # Vowel Remover
 
 			       function shortcut(string) {
   return string.replace(/[aeiou]/g, '')}
-			       Rock Paper Scissors!
+	
+# Rock Paper Scissors!
+			       
 const rps = (p1, p2) => {
   let rules = { rock: 'scissors', paper: 'rock', scissors: 'paper' };
   if (p1 === p2) return 'Draw!';
   if (p2 === rules[p1]) {
     return 'Player 1 won!'; }
   return 'Player 2 won!';};
-	Persistent Bugger
+
+# Persistent Bugger
 
 	
 function persistence(num) {
@@ -209,9 +213,9 @@ function persistence(num) {
       .reduce((a, b) => a * b)
       .toString(); }
   return times;}
-	week 3
+
 	
-	Who Likes It?
+# Who Likes It?
 	
 	function likes(names) {
   if (names.length == 0) return 'no one likes this';
@@ -221,7 +225,7 @@ function persistence(num) {
     return `${names[0]}, ${names[1]} and ${names[2]} like this`;
   return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;}
 	
-	Bit Counting
+# Bit Counting
 	
 var countBits = function (n) {
   return n
@@ -229,7 +233,7 @@ var countBits = function (n) {
     .split('')
     .reduce((total, val) => total + Number(val), 0);};
 	
-	Your order, please
+# Your order, please
 	
 function order(words) {
   let wordsArray = words.split(' ');
@@ -238,12 +242,12 @@ function order(words) {
   );
   return wordsArray.join(' ');}
 
-	Simple Pig Latin
+# Simple Pig Latin
 
 	function pigIt(str) {
   return str.replace(/(\w)(\w*)(\s|$)/g, '$2$1ay$3');}
 	
-Counting Duplicates
+# Counting Duplicates
 
 	function duplicateCount(text) {
   return text
@@ -253,7 +257,7 @@ Counting Duplicates
       return arr.indexOf(char) !== i && arr.lastIndexOf(char) === i;
     }).length;}
 	
-	Decode The Morse Code
+# Decode The Morse Code
 
 	decodeMorse = function (morseCode) {
   return morseCode
@@ -263,7 +267,7 @@ Counting Duplicates
     .replace(/  /g, ' ')
     .trim();};
 	
-	Valid Parentheses
+# Valid Parentheses
 
 	
 	function validParentheses(parens) {
@@ -278,14 +282,14 @@ Convert String To Camel Case
 	Unique In Order
 var uniqueInOrder = function (iterable) { return [...iterable].filter((chr, i) => chr != iterable[i + 1]);};
 	
-	Fold An Array
+# Fold An Array
 	
 function foldArray(a, n) {
   const r = [],
     c = a.slice();
   while (c.length) r.push(c.pop() + (c.shift() || 0)); return n - 1 ? foldArray(r, n - 1) : r;}
 	
-	Encrypt This!
+# Encrypt This!
 
 	const encryptThis = (text) => text
     .split(' ').map((word) =>  word.replace(/(^\w)(\w)(\w*)(\w$)/, `$1$4$3$2`.replace(/^\w/, word.charCodeAt(0)) ).join(' ');
