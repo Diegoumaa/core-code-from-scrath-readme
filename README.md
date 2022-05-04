@@ -65,7 +65,7 @@ en decimales es 2000 y en binario es: 11111010000
 
   # Create a program that display your name
   
-  .data
+.data
 	      
 	NOMBRE: .asciiz "\DIEGO UMANA\n"
   
@@ -81,14 +81,14 @@ en decimales es 2000 y en binario es: 11111010000
   
 # En este ejercicio debes usar un control de flujo iterativo para poder imprimir todos los números pares en el rango de números del 0 al 100. Recuerda que no debes imprimir cada número, debes usar una estructura de control de flujo para realizar el ejercicio
   
-  for (var i = 0; i <= 100; i+=2) {
+for (var i = 0; i <= 100; i+=2) {
   
-  console.log(i);
+console.log(i);
 }
   
 # The code shown below is not working in the right way, as a task you must find the error made by the developer who programmed this code and correct it, for this exercise you must explain what the error is and place the correct code
 			  
-	 FORMA INCORRECTA
+# FORMA INCORRECTA
 			  
 var cond = false;
 
@@ -97,13 +97,13 @@ if ((cond = true)) {
   console.log('The cond variable is true');
 			  
 }
-			  else 
-			  {
+else 
+{
   console.log('The cond variable is false');
 			  
 }
 			  
-	 FORMA CORRECTA	
+# FORMA CORRECTA	
 			  
 var  cond  =  false ;
 
@@ -134,7 +134,7 @@ if (valor == 100) {
 	
 # MULTIPLICAR
 	
-	function multiply(a, b){ return a * b;}
+function multiply(a, b){ return a * b;}
 	
 # ASCII Total
 	
@@ -142,11 +142,11 @@ function uniTotal(string) {return Array.from(string).reduce( (result, char) => r
 	
 # Char From ASCII Value
 
-	function  getChar(c) {return String.fromCharCode(c);}
+function  getChar(c) {return String.fromCharCode(c);}
 	
 # Binary Addition
 
-	function addBinary(a, b) {return (a + b).toString(2);}
+function addBinary(a, b) {return (a + b).toString(2);}
 	
 # Student's Final Grade
 	
@@ -156,10 +156,10 @@ function finalGrade(exam, projects) {let resultado = 0; if (exam > 90 || project
 	
 # Holiday VIII - Duty Free
 
-	function dutyFree(normPrice, discount, hol) {let dicountPrice = (normPrice * discount) / 100;
-   let bottlesWithDicountPriceToCoverHoliday = hol / dicountPrice;
-  let roundedResult = Math.floor(bottlesWithDicountPriceToCoverHoliday);
-  return roundedResult;}
+function dutyFree(normPrice, discount, hol) {let dicountPrice = (normPrice * discount) / 100;
+let bottlesWithDicountPriceToCoverHoliday = hol / dicountPrice;
+let roundedResult = Math.floor(bottlesWithDicountPriceToCoverHoliday);
+return roundedResult;}
 	
 # Twice As Old
 	
@@ -167,13 +167,13 @@ function twiceAsOld(dadYearsOld, sonYearsOld) { return Math.abs(dadYearsOld - 2 
 	
 # Valid Spacing
 	
-	function validSpacing(s) {
-  if (s.length === 0) return true;
-  if (s[0] === ' ' || s[s.length - 1] === ' ') return false;
-  let aSpaces0 = s.split(' ');
-  for (let i = 0, length = aSpaces0.length; i < length; i++) {
-    if (aSpaces0[i] === '') return false; }
-  return true;
+function validSpacing(s) {
+if (s.length === 0) return true;
+if (s[0] === ' ' || s[s.length - 1] === ' ') return false;
+let aSpaces0 = s.split(' ');
+for (let i = 0, length = aSpaces0.length; i < length; i++) {
+if (aSpaces0[i] === '') return false; }
+return true;
 
 # Fake Binary
 
@@ -182,12 +182,12 @@ return Array.from(x)
 .map((digit) => (+digit < 5 ? 0 : 1))
 .join('');}
 
-			   #Remove All Exclamation Marks From The End Of Sentence
+# Remove All Exclamation Marks From The End Of Sentence
 
 function remove(string) {
 return string.replace(/!+$/, '');}
 
-			       # Vowel Remover
+# Vowel Remover
 
 function shortcut(string) {
 return string.replace(/[aeiou]/g, '')}
