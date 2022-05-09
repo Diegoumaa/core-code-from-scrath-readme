@@ -296,6 +296,41 @@ while (c.length) r.push(c.pop() + (c.shift() || 0)); return n - 1 ? foldArray(r,
 
 const encryptThis = (text) => text
 .split(' ').map((word) =>  word.replace(/(^\w)(\w)(\w*)(\w$)/, `$1$4$3$2`.replace(/^\w/, word.charCodeAt(0)) ).join(' ');
+
+	
+# Get Number From String
+	
+	function getNumberFromString(s) {
+  return Number(s.replace(/\D/g, ''));
+}
+	
+# Simple Validation Of A Username
+
+	function validateUsr(username) {
+  res = /^([a-z]+|\d+|_){4,16}$/.test(username);
+  return res;
+}
+
+# String Cleaning
+
+
+	function stringClean(s) {
+  return s.replace(/[0-9]/g, '');
+}
+	
+# Password Validation
+
+
+	function validate(password) {
+  return (
+    /^[A-Za-z0-9]{6,}$/.test(password) &&
+    /[A-Z]+/.test(password) &&
+    /[a-z]+/.test(password) &&
+    /[0-9]+/.test(password)
+  );
+}
+
+  
 	
 	
 	
